@@ -1,3 +1,5 @@
+仓库：https://github.com/richard-lin-g/edge-llm-serving
+
 # EdgeServe · 工业边缘大模型推理服务平台
 
 > 在「有 GPU 的台式机」和「只有 CPU 的笔记本」两种环境下，把大模型部署成可调用、可压测、可容器化交付的推理服务，并给出可解释的性能-精度权衡表。
