@@ -1,0 +1,5 @@
+*.gguf
+build/
+results/*.csv
+results/*.log
+__pycache__/
