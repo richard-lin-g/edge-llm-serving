@@ -1,0 +1,9 @@
+model,ngl,prompt_tokens,vram_peak_mib,net_mib,tg128,rel_tg,baseline_mib
+qwen2.5-3b-instruct-q4_k_m.gguf,0,4096,982,560,21.71,1.00,422
+qwen2.5-3b-instruct-q4_k_m.gguf,10,4096,1404,982,22.74,1.05,422
+qwen2.5-3b-instruct-q4_k_m.gguf,12,4096,1492,1070,23.28,1.07,422
+qwen2.5-3b-instruct-q4_k_m.gguf,16,4096,1697,1275,26.80,1.23,422
+qwen2.5-3b-instruct-q4_k_m.gguf,20,4096,1873,1451,31.69,1.46,422
+qwen2.5-3b-instruct-q4_k_m.gguf,28,4096,2229,1807,36.28,1.67,422
+qwen2.5-3b-instruct-q4_k_m.gguf,32,4096,2418,1996,37.76,1.74,422
+qwen2.5-3b-instruct-q4_k_m.gguf,36,4096,2602,2180,39.33,1.81,422

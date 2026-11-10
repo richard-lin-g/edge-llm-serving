@@ -1,0 +1,2 @@
+model,ngl,prompt_tokens,vram_peak_mib,net_mib,vgpu_margin_mib,baseline_mib,note
+qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf,22,2048,3819,3397,276,422,best_practical

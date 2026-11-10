@@ -1,0 +1,4 @@
+model,ngl,prompt_tokens,vram_peak_mib,net_mib,vgpu_margin_mib,baseline_mib,tg128
+qwen2.5-3b-instruct-q8_0.gguf,28,4096,3220,2798,875,422,23.22
+qwen2.5-3b-instruct-q8_0.gguf,32,4096,3624,3202,471,422,25.14
+qwen2.5-3b-instruct-q8_0.gguf,36,4096,3860,3438,235,422,26.90

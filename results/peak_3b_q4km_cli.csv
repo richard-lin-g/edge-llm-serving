@@ -1,0 +1,7 @@
+model,ngl,ctx,vram_peak_mib,rc
+qwen2.5-3b-instruct-q4_k_m.gguf,0,4096,861,0
+qwen2.5-3b-instruct-q4_k_m.gguf,10,4096,1553,0
+qwen2.5-3b-instruct-q4_k_m.gguf,20,4096,2027,0
+qwen2.5-3b-instruct-q4_k_m.gguf,28,4096,2407,0
+qwen2.5-3b-instruct-q4_k_m.gguf,32,4096,2595,0
+qwen2.5-3b-instruct-q4_k_m.gguf,36,4096,2787,0

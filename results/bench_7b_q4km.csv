@@ -1,0 +1,9 @@
+model,ngl,pp512,tg128,repeats,note
+qwen2.5-7b-instruct-q4_k_m,0,59.38,9.44,3,cpu_only
+qwen2.5-7b-instruct-q4_k_m,10,60.72,10.08,3,
+qwen2.5-7b-instruct-q4_k_m,16,62.01,13.87,3,
+qwen2.5-7b-instruct-q4_k_m,20,61.30,15.24,1,
+qwen2.5-7b-instruct-q4_k_m,22,61.07,16.04,1,best_practical
+qwen2.5-7b-instruct-q4_k_m,24,57.02,15.78,1,spill_start
+qwen2.5-7b-instruct-q4_k_m,26,58.36,12.31,1,spill
+qwen2.5-7b-instruct-q4_k_m,28,58.55,9.74,1,spill_severe

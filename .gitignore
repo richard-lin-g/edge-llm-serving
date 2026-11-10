@@ -1,5 +1,6 @@
 *.gguf
 build/
-results/*.csv
+results/*.tmp
+results/sweep-ngl*.log
 results/*.log
 __pycache__/

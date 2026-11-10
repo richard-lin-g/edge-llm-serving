@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
-# 用法: scripts/vram_peak.sh <model.gguf> "0 10 20 28 32 36" [ctx]
+# D2 显存峰值测量：用 llama-bench 当负载（非交互、可复现），nvidia-smi 250ms 采样取稳态峰值
+# 用法: scripts/vram_peak.sh <model.gguf> "0 10 20" [prompt_tokens]
+# 注意: prompt_tokens 决定 KV 规模，测 4K 上下文用 4096，测 2K 上下文用 2048
 set -u
 MODEL="${1:?model path}"
 NGLS="${2:?ngl list}"
-CTX="${3:-4096}"
-LLAMA="$HOME/llama.cpp/build/bin/llama-cli"
+PROMPT_TOKENS="${3:-4096}"
+BENCH="${LLAMA_BENCH:-$HOME/llama.cpp/build/bin/llama-bench}"
+mkdir -p results
 echo "model,ngl,ctx,vram_peak_mib,rc"
 for ngl in $NGLS; do
-  log=$(mktemp)
-  nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits -lms 250 >"$log" 2>/dev/null &
-  smi=$!
-  "$LLAMA" -m "$MODEL" -ngl "$ngl" -c "$CTX" -n 128 --no-warmup \
-    -p "Explain why edge devices need quantized models in three sentences." \
-    </dev/null >/tmp/run.log 2>&1
-  rc=$?
-  kill "$smi" 2>/dev/null; wait "$smi" 2>/dev/null
-  peak=$(sort -n "$log" | tail -1)
-  echo "$(basename "$MODEL"),$ngl,$CTX,$peak,$rc"
-  rm -f "$log"
+  SAMPLE=$(mktemp)
+  nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits -lms 250 >"$SAMPLE" 2>/dev/null &
+  SMI=$!
+  timeout 600 "$BENCH" -m "$MODEL" -ngl "$ngl" -p "$PROMPT_TOKENS" -n 128 -r 1 >/dev/null 2>&1
+  RC=$?
+  kill "$SMI" 2>/dev/null; wait "$SMI" 2>/dev/null
+  PEAK=$(sort -n "$SAMPLE" | tail -1)
+  echo "$(basename "$MODEL"),$ngl,$PROMPT_TOKENS,${PEAK:-0},$RC"
+  rm -f "$SAMPLE"
 done
