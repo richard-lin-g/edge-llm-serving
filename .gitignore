@@ -1,6 +1,16 @@
 *.gguf
+*.bin
 build/
+build-*/
+results/*.log
 results/*.tmp
 results/sweep-ngl*.log
-results/*.log
 __pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# 本地预编译的 llama.cpp 二进制与 CUDA 库（84MB），不入库
+bin/
+# 客户端验收脚本的临时输出
+client-cpp/logs/
