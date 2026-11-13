@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 project(edge-client LANGUAGES CXX)
 
+# 生成 compile_commands.json，供 clangd / VS Code C/C++ 扩展做精确跳转
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)

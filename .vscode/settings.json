@@ -1,0 +1,9 @@
+{
+  "cmake.sourceDirectory": "${workspaceFolder}/client-cpp",
+  "cmake.buildDirectory": "${workspaceFolder}/client-cpp/build",
+  "C_Cpp.default.cppStandard": "c++17",
+  "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+  "files.trimTrailingWhitespace": false,
+  "files.insertFinalNewline": true,
+  "editor.rulers": [100]
+}
