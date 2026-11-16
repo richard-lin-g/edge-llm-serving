@@ -1,0 +1,1 @@
+{"id": "spd", "tier": "L", "repeat": 5, "text": "IEC 60870-5-104 规约在 TCP 之上承载 ASDU，启动过程依次为 STARTDT act、STARTDT con，链路异常时通过 TESTFR 保活。请依次说明 I 帧、S 帧、U 帧的用途与发送条件，说明发送序号与接收序号的回绕规则，并解释为什么在长连接上必须做序号校验而不能只依赖 TCP 的可靠传输。"}
