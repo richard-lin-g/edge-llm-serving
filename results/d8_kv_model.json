@@ -1,0 +1,24 @@
+{
+  "model": "qwen2.5-3b-instruct-q4_k_m.gguf",
+  "gguf_version": 3,
+  "arch": "qwen2",
+  "layers": 36,
+  "heads": 16,
+  "kv_heads": 2,
+  "head_dim": 128,
+  "value_dim": 128,
+  "bytes_per_element": 2.0,
+  "kv_bytes_per_token": 36864,
+  "kv_kib_per_token": 36.0,
+  "train_context": 32768,
+  "gqa_ratio": 8.0,
+  "ctx_table_mib": {
+    "512": 18.0,
+    "1024": 36.0,
+    "2048": 72.0,
+    "4096": 144.0,
+    "8192": 288.0,
+    "16384": 576.0,
+    "32768": 1152.0
+  }
+}

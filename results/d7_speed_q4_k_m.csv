@@ -1,0 +1,4 @@
+ts,tag,tier,prompt_id,rep,n_out,pp_n,ttft_ms,tpot_ms,decode_tps,e2e_tps,srv_pp_tps,srv_tg_tps,vram_peak_mib,vram_base_mib,tok_src
+2026-11-16T10:07:03,d7-q4_k_m-ngl36,L,spd,1,128,566,3839.2,29.82,33.53,16.72,147.76,33.53,2962,2956,usage
+2026-11-16T10:07:11,d7-q4_k_m-ngl36,L,spd,2,128,567,3878.0,29.954,33.38,16.66,147.31,33.64,2955,2956,usage
+2026-11-16T10:07:19,d7-q4_k_m-ngl36,L,spd,3,128,567,3902.6,30.095,33.23,16.57,146.05,33.49,2955,2956,usage

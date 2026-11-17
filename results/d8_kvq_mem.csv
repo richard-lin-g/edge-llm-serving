@@ -1,0 +1,4 @@
+ctk,ctv,ctx,vram_base_mib,vram_peak_mib,delta_mib
+f16,f16,8192,663,2935,2272
+q8_0,f16,8192,719,2901,2182
+q8_0,q8_0,8192,684,2749,2065

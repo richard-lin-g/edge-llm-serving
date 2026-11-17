@@ -1,0 +1,7 @@
+quant,file,size_gib,ngl,test,test_tps,stddev,commit,host
+q4_0,qwen2.5-3b-instruct-q4_0.gguf,1.86,36,pp512,148.92,0.67,,wsl-t600
+q4_0,qwen2.5-3b-instruct-q4_0.gguf,1.86,36,tg128,37.76,0.38,,wsl-t600
+q4_k_m,qwen2.5-3b-instruct-q4_k_m.gguf,1.96,36,pp512,147.31,0.72,,wsl-t600
+q4_k_m,qwen2.5-3b-instruct-q4_k_m.gguf,1.96,36,tg128,33.53,0.06,,wsl-t600
+q8_0,qwen2.5-3b-instruct-q8_0.gguf,3.37,36,pp512,141.45,0.81,,wsl-t600
+q8_0,qwen2.5-3b-instruct-q8_0.gguf,3.37,36,tg128,25.51,0.42,,wsl-t600

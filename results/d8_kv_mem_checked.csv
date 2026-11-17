@@ -1,0 +1,4 @@
+ctx,ngl,threads,slots,kv_formula_mib,kv_log_mib,vram_base_mib,vram_peak_mib,notes,kv_expected_delta_mib,kv_measured_delta_mib,kv_err_pct,verdict
+2048,36,8,1,72.0,na,690,2698,ok,0.0,0.0,0.0,PASS
+4096,36,8,1,144.0,na,698,2767,ok,72.0,69.0,-4.2,PASS
+8192,36,8,1,288.0,na,674,2902,ok,216.0,204.0,-5.6,PASS

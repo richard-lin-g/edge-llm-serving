@@ -1,0 +1,4 @@
+quant,size_gib,ngl,vram_base_mib,vram_peak_mib
+q4_0,1.86,36,412,2596
+q4_k_m,1.96,36,408,2699
+q8_0,3.37,36,412,3863
