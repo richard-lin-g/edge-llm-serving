@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="500" viewBox="0 0 880 500" font-family="Segoe UI,Microsoft YaHei,sans-serif">
+<rect width="100%%" height="100%%" fill="#ffffff"/>
+<text x="92" y="36" font-size="21" font-weight="600" fill="#111827">D9 并发-吞吐/延迟曲线</text>
+<text x="92" y="58" font-size="12" fill="#6b7280">Qwen2.5-3B-Instruct Q4_K_M · NVIDIA T600 4GB · 每档 100 请求 · 每槽 ctx 1024 · 输出 64 token</text>
+<line x1="92" y1="426.0" x2="794" y2="426.0" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="430.0" font-size="11" fill="#6b7280" text-anchor="end">0.00</text>
+<line x1="92" y1="377.1" x2="794" y2="377.1" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="381.1" font-size="11" fill="#6b7280" text-anchor="end">0.10</text>
+<line x1="92" y1="328.3" x2="794" y2="328.3" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="332.3" font-size="11" fill="#6b7280" text-anchor="end">0.20</text>
+<line x1="92" y1="279.4" x2="794" y2="279.4" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="283.4" font-size="11" fill="#6b7280" text-anchor="end">0.30</text>
+<line x1="92" y1="230.6" x2="794" y2="230.6" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="234.6" font-size="11" fill="#6b7280" text-anchor="end">0.40</text>
+<line x1="92" y1="181.7" x2="794" y2="181.7" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="185.7" font-size="11" fill="#6b7280" text-anchor="end">0.50</text>
+<line x1="92" y1="132.9" x2="794" y2="132.9" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="136.9" font-size="11" fill="#6b7280" text-anchor="end">0.60</text>
+<line x1="92" y1="84.0" x2="794" y2="84.0" stroke="#eef0f3" stroke-width="1"/>
+<text x="82" y="88.0" font-size="11" fill="#6b7280" text-anchor="end">0.70</text>
+<text x="38" y="255" font-size="12" fill="#2563eb" transform="rotate(-90 38 255)" text-anchor="middle">QPS</text>
+<text x="804" y="430.0" font-size="11" fill="#6b7280">0</text>
+<text x="804" y="344.5" font-size="11" fill="#6b7280">10</text>
+<text x="804" y="259.0" font-size="11" fill="#6b7280">21</text>
+<text x="804" y="173.5" font-size="11" fill="#6b7280">32</text>
+<text x="804" y="88.0" font-size="11" fill="#6b7280">42</text>
+<text x="848" y="255" font-size="12" fill="#b45309" transform="rotate(90 848 255)" text-anchor="middle">P95 (s)</text>
+<line x1="92" y1="426" x2="794" y2="426" stroke="#9ca3af" stroke-width="1"/>
+<text x="92.0" y="450" font-size="12" fill="#374151" text-anchor="middle">np=1</text>
+<text x="326.0" y="450" font-size="12" fill="#374151" text-anchor="middle">np=4</text>
+<text x="560.0" y="450" font-size="12" fill="#374151" text-anchor="middle">np=8</text>
+<text x="794.0" y="450" font-size="12" fill="#374151" text-anchor="middle">np=16</text>
+<polyline points="92.0,255.0 326.0,171.9 560.0,142.6 794.0,132.9" stroke="#2563eb" stroke-width="2.5" fill="none"/>
+<circle cx="92.0" cy="255.0" r="5" fill="#2563eb"/>
+<text x="92.0" y="243.0" font-size="12" font-weight="600" fill="#2563eb" text-anchor="middle">0.35</text>
+<circle cx="326.0" cy="171.9" r="5" fill="#2563eb"/>
+<text x="326.0" y="159.9" font-size="12" font-weight="600" fill="#2563eb" text-anchor="middle">0.52</text>
+<circle cx="560.0" cy="142.6" r="5" fill="#2563eb"/>
+<text x="560.0" y="130.6" font-size="12" font-weight="600" fill="#2563eb" text-anchor="middle">0.58</text>
+<circle cx="794.0" cy="132.9" r="5" fill="#2563eb"/>
+<text x="782.0" y="122.9" font-size="12" font-weight="600" fill="#2563eb" text-anchor="end">0.60</text>
+<polyline points="92.0,402.5 326.0,363.0 560.0,292.1 794.0,126.0" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="7,4" fill="none"/>
+<circle cx="92.0" cy="402.5" r="5" fill="#f59e0b"/>
+<text x="92.0" y="424.5" font-size="12" font-weight="600" fill="#b45309" text-anchor="middle">2.9s</text>
+<circle cx="326.0" cy="363.0" r="5" fill="#f59e0b"/>
+<text x="326.0" y="385.0" font-size="12" font-weight="600" fill="#b45309" text-anchor="middle">7.7s</text>
+<circle cx="560.0" cy="292.1" r="5" fill="#f59e0b"/>
+<text x="560.0" y="314.1" font-size="12" font-weight="600" fill="#b45309" text-anchor="middle">16.4s</text>
+<circle cx="794.0" cy="126.0" r="5" fill="#f59e0b"/>
+<text x="782.0" y="144.0" font-size="12" font-weight="600" fill="#b45309" text-anchor="end">36.8s</text>
+<rect x="108" y="92" width="176" height="50" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+<line x1="120" y1="109" x2="148" y2="109" stroke="#2563eb" stroke-width="2.5"/>
+<text x="156" y="113" font-size="12" fill="#374151">QPS（左轴）</text>
+<line x1="120" y1="128" x2="148" y2="128" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="7,4"/>
+<text x="156" y="132" font-size="12" fill="#374151">P95 延迟（右轴）</text>
+<text x="92" y="472" font-size="11" fill="#6b7280">线性参照：若 QPS 随并发线性扩展，np=16 应达 5.60（实测 0.60，差 9.3 倍，远超纵轴）</text>
+<text x="92" y="489" font-size="11" fill="#6b7280">数据源：results/d9_summary.csv · GPU util 93.8/95.4/94.9/95.9% · 负载期 SM 时钟 1800 MHz（未降频）</text>
+</svg>
