@@ -1,0 +1,20 @@
+{
+  "smi": {
+    "name": "NVIDIA T600",
+    "total_mib": 4096,
+    "used_mib": 647,
+    "free_mib": 3291,
+    "driver": "595.79",
+    "compute_cap": "7.5"
+  },
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "device": "NVIDIA T600",
+  "capability": "7.5",
+  "total_mib": 4095,
+  "baseline_used_mib": 791,
+  "ceiling_mib": 11136,
+  "free_after_probe_mib": 0,
+  "note": "peak 为本进程实际拿到的上限；torch 缓存分配器按段申请，误差 ±64 MiB",
+  "released_mib": 3304
+}
